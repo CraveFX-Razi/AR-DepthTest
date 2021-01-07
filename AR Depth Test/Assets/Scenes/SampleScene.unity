@@ -520,7 +520,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1296885654}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1644503772}
+        m_TargetAssemblyTypeName: OcculusionChanger, Assembly-CSharp
+        m_MethodName: ChangeOcclusion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1296885654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,6 +585,7 @@ GameObject:
   - component: {fileID: 1644503768}
   - component: {fileID: 1644503767}
   - component: {fileID: 1644503771}
+  - component: {fileID: 1644503772}
   m_Layer: 0
   m_Name: AR Camera
   m_TagString: Untagged
@@ -694,8 +707,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HumanSegmentationStencilMode: 0
   m_HumanSegmentationDepthMode: 0
-  m_EnvironmentDepthMode: 3
+  m_EnvironmentDepthMode: 1
   m_OcclusionPreferenceMode: 0
+--- !u!114 &1644503772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644503765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed4a57816db0d041afdae6f8b551839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeText: {fileID: 1896440184}
 --- !u!1 &1896440182
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +792,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Fastest
 --- !u!222 &1896440185
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -862,4 +888,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493b7d98f12f7ee46b4c898e1637f7c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6669110085658746411, guid: 69941bc198eb53648970d1d4ad300e87, type: 3}
+  prefab: {fileID: 866386169776632769, guid: 69941bc198eb53648970d1d4ad300e87, type: 3}
