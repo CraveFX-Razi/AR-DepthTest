@@ -24,6 +24,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARCameraBackground
     - UnityEngine.XR.ARFoundation.ARCameraManager
     - UnityEngine.XR.ARFoundation.ARInputManager
+    - UnityEngine.XR.ARFoundation.AROcclusionManager
     - UnityEngine.XR.ARFoundation.ARPlaneManager
     - UnityEngine.XR.ARFoundation.ARPointCloudManager
     - UnityEngine.XR.ARFoundation.ARRaycastManager
@@ -39,8 +40,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -99,81 +102,83 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11824}
+      Script: {instanceID: 11816}
     - Class: 114
-      Script: {instanceID: 12070}
+      Script: {instanceID: 11818}
     - Class: 114
-      Script: {instanceID: 12074}
+      Script: {instanceID: 11848}
     - Class: 114
-      Script: {instanceID: 12118}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 12164}
+      Script: {instanceID: 12162}
     - Class: 114
-      Script: {instanceID: 12266}
+      Script: {instanceID: 12210}
     - Class: 114
-      Script: {instanceID: 12300}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12354}
+      Script: {instanceID: 12348}
     - Class: 114
-      Script: {instanceID: 12584}
+      Script: {instanceID: 12400}
     - Class: 114
-      Script: {instanceID: 12604}
+      Script: {instanceID: 12408}
     - Class: 114
-      Script: {instanceID: 12716}
+      Script: {instanceID: 12474}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 12652}
     - Class: 114
-      Script: {instanceID: 13384}
+      Script: {instanceID: 12676}
+    - Class: 114
+      Script: {instanceID: 12796}
+    - Class: 114
+      Script: {instanceID: 13148}
+    - Class: 114
+      Script: {instanceID: 13504}
     - Class: 114
       Script: {instanceID: 13518}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 13710}
+      Script: {instanceID: 13658}
     - Class: 114
-      Script: {instanceID: 13724}
+      Script: {instanceID: 13792}
     - Class: 114
-      Script: {instanceID: 13844}
+      Script: {instanceID: 13830}
     - Class: 114
-      Script: {instanceID: 13972}
+      Script: {instanceID: 13860}
     - Class: 114
-      Script: {instanceID: 14066}
+      Script: {instanceID: 13876}
     - Class: 114
-      Script: {instanceID: 14120}
+      Script: {instanceID: 13892}
     - Class: 114
-      Script: {instanceID: 14154}
+      Script: {instanceID: 13968}
     - Class: 114
-      Script: {instanceID: 14366}
+      Script: {instanceID: 14006}
     - Class: 114
-      Script: {instanceID: 14518}
+      Script: {instanceID: 14034}
     - Class: 114
-      Script: {instanceID: 14578}
+      Script: {instanceID: 14138}
     - Class: 114
-      Script: {instanceID: 14648}
+      Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 14668}
+      Script: {instanceID: 14292}
     - Class: 114
-      Script: {instanceID: 15462}
+      Script: {instanceID: 14326}
     - Class: 114
-      Script: {instanceID: 15496}
+      Script: {instanceID: 14360}
     - Class: 114
-      Script: {instanceID: 15698}
+      Script: {instanceID: 14430}
     - Class: 114
-      Script: {instanceID: 15700}
+      Script: {instanceID: 14440}
     - Class: 114
-      Script: {instanceID: 15702}
+      Script: {instanceID: 14556}
     - Class: 114
-      Script: {instanceID: 15704}
+      Script: {instanceID: 14712}
     - Class: 114
-      Script: {instanceID: 15706}
+      Script: {instanceID: 14846}
     - Class: 114
-      Script: {instanceID: 15708}
+      Script: {instanceID: 14852}
     - Class: 114
-      Script: {instanceID: 15710}
-    - Class: 114
-      Script: {instanceID: 15712}
-    - Class: 114
-      Script: {instanceID: 15714}
+      Script: {instanceID: 14876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -199,6 +204,18 @@ ScriptsOnlyBuild:
     - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 134322c9293c1896357cce271b819ce4
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -259,12 +276,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: fd8b23ad3c9e81bc85b197495bc510ac
@@ -351,6 +362,12 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: ced7b39b5567f2b7e906457f9d7ce6e7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
+    className: CircleRenderer
+  - hash:
+      serializedVersion: 2
       Hash: 7f5c55cb7b3151ce240452eb85500d32
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -367,6 +384,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 68d775dd0f68b5f35ae7628f28ed616e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
+    className: ResolveMenuManager
   - hash:
       serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
@@ -478,6 +501,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Google.XR.ARCoreExtensions.dll
+    namespaceName: Google.XR.ARCoreExtensions
+    className: ARCloudReferencePoint
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPlaneMeshVisualizer
@@ -513,10 +542,22 @@ ScriptsOnlyBuild:
     className: ARCoreLoaderSettings
   - hash:
       serializedVersion: 2
+      Hash: 0b69e0da970de9b8af6a66494b3b1beb
+    assemblyName: Google.XR.ARCoreExtensions.dll
+    namespaceName: Google.XR.ARCoreExtensions.Internal
+    className: RuntimeConfig
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: df07edae52f0d5f453ea40e56a6bfb8f
+    assemblyName: Google.XR.ARCoreExtensions.dll
+    namespaceName: Google.XR.ARCoreExtensions
+    className: ARCoreRecordingConfig
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -567,6 +608,12 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: c17e12379fe04eee2d72548ffa4a1ecc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
+    className: MapQualityIndicator
+  - hash:
+      serializedVersion: 2
       Hash: c1d728126ff1918728036c59106d32b2
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -585,6 +632,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 719400f8fc0c6e0b5f60c68f8e295923
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
+    className: DoubleLabelsItem
+  - hash:
+      serializedVersion: 2
       Hash: 0535c7e7c34dd1cdfc5b1f8ffce1aebe
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -601,6 +654,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARHumanBody
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
+    className: SafeAreaScaler
   - hash:
       serializedVersion: 2
       Hash: f7bb6096199e0cf058d5d69878184cf4
@@ -639,6 +698,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: b204b91f453acd66e521cb4324ccd821
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
+    className: MultiselectionDropdown
+  - hash:
+      serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -663,6 +728,18 @@ ScriptsOnlyBuild:
     className: ARRaycast
   - hash:
       serializedVersion: 2
+      Hash: 7790bd47c2f2de6f0e66851342fe95f1
+    assemblyName: Google.XR.ARCoreExtensions.dll
+    namespaceName: Google.XR.ARCoreExtensions
+    className: ARCoreExtensionsConfig
+  - hash:
+      serializedVersion: 2
+      Hash: fe52c2703fa853b207fa35e04b9e35d8
+    assemblyName: Google.XR.ARCoreExtensions.dll
+    namespaceName: Google.XR.ARCoreExtensions
+    className: ARCoreExtensionsCameraConfigFilter
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -679,6 +756,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARTrackedImage
+  - hash:
+      serializedVersion: 2
+      Hash: 7778da4443de4ab0026ddbbbc8361add
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
+    className: MapQualityBar
   - hash:
       serializedVersion: 2
       Hash: 37a13922678947e6d144f41a7195154a
@@ -747,10 +830,22 @@ ScriptsOnlyBuild:
     className: ARKitLoaderSettings
   - hash:
       serializedVersion: 2
+      Hash: 14a9970862ceb2123eee7f80be363548
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
+    className: PersistentCloudAnchorsController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPointCloudMeshVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 6ec8a20eb80a8f9d645e2b756ffba7a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
+    className: ARViewManager
   - hash:
       serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
@@ -787,6 +882,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARMeshManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Google.XR.ARCoreExtensions.dll
+    namespaceName: Google.XR.ARCoreExtensions
+    className: ARCloudAnchor
   - hash:
       serializedVersion: 2
       Hash: a2612813f45d0ced02c3e4bc9dbea8b4
@@ -837,12 +938,6 @@ ScriptsOnlyBuild:
     className: ARHumanBodyManager
   - hash:
       serializedVersion: 2
-      Hash: 134322c9293c1896357cce271b819ce4
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: EventTrigger
-  - hash:
-      serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -879,6 +974,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 1cda2d67628228f575120c220ac26158
+    assemblyName: Google.XR.ARCoreExtensions.dll
+    namespaceName: Google.XR.ARCoreExtensions
+    className: ARCoreExtensions
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -913,102 +1014,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.XR.ARCoreExtensions.dll
-    namespaceName: Google.XR.ARCoreExtensions
-    className: ARCloudReferencePoint
-  - hash:
-      serializedVersion: 2
-      Hash: 0b69e0da970de9b8af6a66494b3b1beb
-    assemblyName: Google.XR.ARCoreExtensions.dll
-    namespaceName: Google.XR.ARCoreExtensions.Internal
-    className: RuntimeConfig
-  - hash:
-      serializedVersion: 2
-      Hash: df07edae52f0d5f453ea40e56a6bfb8f
-    assemblyName: Google.XR.ARCoreExtensions.dll
-    namespaceName: Google.XR.ARCoreExtensions
-    className: ARCoreRecordingConfig
-  - hash:
-      serializedVersion: 2
-      Hash: 7790bd47c2f2de6f0e66851342fe95f1
-    assemblyName: Google.XR.ARCoreExtensions.dll
-    namespaceName: Google.XR.ARCoreExtensions
-    className: ARCoreExtensionsConfig
-  - hash:
-      serializedVersion: 2
-      Hash: fe52c2703fa853b207fa35e04b9e35d8
-    assemblyName: Google.XR.ARCoreExtensions.dll
-    namespaceName: Google.XR.ARCoreExtensions
-    className: ARCoreExtensionsCameraConfigFilter
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Google.XR.ARCoreExtensions.dll
-    namespaceName: Google.XR.ARCoreExtensions
-    className: ARCloudAnchor
-  - hash:
-      serializedVersion: 2
-      Hash: 1cda2d67628228f575120c220ac26158
-    assemblyName: Google.XR.ARCoreExtensions.dll
-    namespaceName: Google.XR.ARCoreExtensions
-    className: ARCoreExtensions
-  - hash:
-      serializedVersion: 2
-      Hash: ced7b39b5567f2b7e906457f9d7ce6e7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
-    className: CircleRenderer
-  - hash:
-      serializedVersion: 2
-      Hash: 68d775dd0f68b5f35ae7628f28ed616e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
-    className: ResolveMenuManager
-  - hash:
-      serializedVersion: 2
-      Hash: c17e12379fe04eee2d72548ffa4a1ecc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
-    className: MapQualityIndicator
-  - hash:
-      serializedVersion: 2
-      Hash: 719400f8fc0c6e0b5f60c68f8e295923
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
-    className: DoubleLabelsItem
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
-    className: SafeAreaScaler
-  - hash:
-      serializedVersion: 2
-      Hash: b204b91f453acd66e521cb4324ccd821
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
-    className: MultiselectionDropdown
-  - hash:
-      serializedVersion: 2
-      Hash: 7778da4443de4ab0026ddbbbc8361add
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
-    className: MapQualityBar
-  - hash:
-      serializedVersion: 2
-      Hash: 14a9970862ceb2123eee7f80be363548
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
-    className: PersistentCloudAnchorsController
-  - hash:
-      serializedVersion: 2
-      Hash: 6ec8a20eb80a8f9d645e2b756ffba7a0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Google.XR.ARCoreExtensions.Samples.PersistentCloudAnchors
-    className: ARViewManager
   platform: 13
   scenePathNames:
   - Assets/Samples/ARCore Extensions/1.22.0/Persistent Cloud Anchor Sample/Scenes/PersistentCloudAnchors.unity
